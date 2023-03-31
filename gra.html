@@ -8,7 +8,7 @@
     <title>Kółko i krzyzyk</title>
   </head>
   <body>
-    <div class="_page _page--no-background">
+    <div class="_page">
       <div class="_nav">
         <div class="_nav-links">
           <a href="index.html" class="_nav-link">Strona główna</a>
@@ -23,65 +23,82 @@
       <div class="_page-content">
         <div class="_page-tictac">
           <div class="_page-tictac__title">Kolko i krzyzyk</div>
-          <div class="_page-tictac__options">
-            <div class="_page-tictac__options-title">Wybierz tryb gry</div>
-            <div class="_page-tictac__options-buttons">
-              <button
-                class="_page-tictac__options-buttons__button"
-                id="computer"
-              >
-                Gra z komputerem
-              </button>
-              <button class="_page-tictac__options-buttons__button" id="multi">
-                Gra wieloosobowa
-              </button>
+          <div class="_page-tictac__view" id="view-config">
+            <div class="_page-tictac__options">
+              <div class="_page-tictac__options-title">Wybierz tryb gry</div>
+              <div class="_page-tictac__options-buttons">
+                <button
+                  class="_page-tictac__options-buttons__button"
+                  id="mode_computer"
+                >
+                  Gra z komputerem
+                </button>
+                <button
+                  class="_page-tictac__options-buttons__button"
+                  id="mode_multi"
+                >
+                  Gra wieloosobowa
+                </button>
+              </div>
             </div>
+            <div class="_page-tictac__options">
+              <div class="_page-tictac__options-title">Kto zaczyna</div>
+              <div class="_page-tictac__options-buttons">
+                <button
+                  class="_page-tictac__options-buttons__button"
+                  id="start_circle"
+                >
+                  Kółko
+                </button>
+                <button
+                  class="_page-tictac__options-buttons__button"
+                  id="start_cross"
+                >
+                  Krzyzyk
+                </button>
+              </div>
+            </div>
+            <button class="_page-tictac__reset" id="start">Start</button>
           </div>
-          <div class="_page-tictac__options">
-            <div class="_page-tictac__options-title">Kto zaczyna</div>
-            <div class="_page-tictac__options-buttons">
-              <button class="_page-tictac__options-buttons__button" id="circle">
-                Kółko
-              </button>
-              <button class="_page-tictac__options-buttons__button" id="cross">
-                Krzyzyk
-              </button>
-            </div>
-          </div>
-          <div class="_page-tictac__slots">
-            <div class="_page-tictac__slots-slot">
-              <div class="_page-tictac__slots-slot__value"></div>
-            </div>
+          <div class="_page-tictac__view" id="view-game">
+            <div class="_page-tictac__slots">
+              <div class="_page-tictac__slots-slot">
+                <div class="_page-tictac__slots-slot__value" data-i="0"></div>
+              </div>
 
-            <div class="_page-tictac__slots-slot">
-              <div class="_page-tictac__slots-slot__value"></div>
+              <div class="_page-tictac__slots-slot">
+                <div class="_page-tictac__slots-slot__value" data-i="1"></div>
+              </div>
+              <div class="_page-tictac__slots-slot">
+                <div class="_page-tictac__slots-slot__value" data-i="2"></div>
+              </div>
+              <div class="_page-tictac__slots-slot">
+                <div class="_page-tictac__slots-slot__value" data-i="3"></div>
+              </div>
+              <div class="_page-tictac__slots-slot">
+                <div class="_page-tictac__slots-slot__value" data-i="4"></div>
+              </div>
+              <div class="_page-tictac__slots-slot">
+                <div class="_page-tictac__slots-slot__value" data-i="5"></div>
+              </div>
+              <div class="_page-tictac__slots-slot">
+                <div class="_page-tictac__slots-slot__value" data-i="6"></div>
+              </div>
+              <div class="_page-tictac__slots-slot">
+                <div class="_page-tictac__slots-slot__value" data-i="7"></div>
+              </div>
+              <div class="_page-tictac__slots-slot">
+                <div class="_page-tictac__slots-slot__value" data-i="8"></div>
+              </div>
             </div>
-            <div class="_page-tictac__slots-slot">
-              <div class="_page-tictac__slots-slot__value"></div>
-            </div>
-            <div class="_page-tictac__slots-slot">
-              <div class="_page-tictac__slots-slot__value"></div>
-            </div>
-            <div class="_page-tictac__slots-slot">
-              <div class="_page-tictac__slots-slot__value"></div>
-            </div>
-            <div class="_page-tictac__slots-slot">
-              <div class="_page-tictac__slots-slot__value"></div>
-            </div>
-            <div class="_page-tictac__slots-slot">
-              <div class="_page-tictac__slots-slot__value"></div>
-            </div>
-            <div class="_page-tictac__slots-slot">
-              <div class="_page-tictac__slots-slot__value"></div>
-            </div>
-            <div class="_page-tictac__slots-slot">
-              <div class="_page-tictac__slots-slot__value"></div>
-            </div>
+            <button class="_page-tictac__reset" id="reset">Reset</button>
+            <button class="_page-tictac__reset" id="endgame">End game</button>
           </div>
-          <button class="_page-tictac__reset" id="reset">Reset</button>
         </div>
       </div>
       <div class="_page-spacer"></div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
